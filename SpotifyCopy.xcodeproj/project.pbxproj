@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		267B1FF22BD15EA400D7D3F8 /* SpotifyRecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B1FF12BD15EA400D7D3F8 /* SpotifyRecentCell.swift */; };
+		267B1FF42BD1661C00D7D3F8 /* SpotifyNewReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B1FF32BD1661C00D7D3F8 /* SpotifyNewReleaseCell.swift */; };
 		268AE63A2BCEEBD9004D5207 /* SpotifyCopyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268AE6392BCEEBD9004D5207 /* SpotifyCopyApp.swift */; };
 		268AE63C2BCEEBD9004D5207 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268AE63B2BCEEBD9004D5207 /* ContentView.swift */; };
 		268AE63E2BCEEBDC004D5207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268AE63D2BCEEBDC004D5207 /* Assets.xcassets */; };
@@ -19,9 +21,14 @@
 		268AE6542BCF00A3004D5207 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268AE6532BCF00A3004D5207 /* User.swift */; };
 		268AE6572BCF0301004D5207 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 268AE6562BCF0301004D5207 /* SwiftfulUI */; };
 		268AE65A2BCF0330004D5207 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 268AE6592BCF0330004D5207 /* SwiftfulRouting */; };
+		268AE6612BCFF853004D5207 /* SpotifyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268AE6602BCFF853004D5207 /* SpotifyHomeView.swift */; };
+		268AE6632BCFFA5D004D5207 /* SpotifyCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268AE6622BCFFA5D004D5207 /* SpotifyCategoryCell.swift */; };
+		268AE6662BCFFC50004D5207 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268AE6652BCFFC50004D5207 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		267B1FF12BD15EA400D7D3F8 /* SpotifyRecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentCell.swift; sourceTree = "<group>"; };
+		267B1FF32BD1661C00D7D3F8 /* SpotifyNewReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNewReleaseCell.swift; sourceTree = "<group>"; };
 		268AE6362BCEEBD9004D5207 /* SpotifyCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		268AE6392BCEEBD9004D5207 /* SpotifyCopyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCopyApp.swift; sourceTree = "<group>"; };
 		268AE63B2BCEEBD9004D5207 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +39,9 @@
 		268AE64F2BCEF999004D5207 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 		268AE6512BCEFE69004D5207 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		268AE6532BCF00A3004D5207 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		268AE6602BCFF853004D5207 /* SpotifyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHomeView.swift; sourceTree = "<group>"; };
+		268AE6622BCFFA5D004D5207 /* SpotifyCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCategoryCell.swift; sourceTree = "<group>"; };
+		268AE6652BCFFC50004D5207 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,7 @@
 			children = (
 				268AE6392BCEEBD9004D5207 /* SpotifyCopyApp.swift */,
 				268AE63B2BCEEBD9004D5207 /* ContentView.swift */,
+				268AE65D2BCFF816004D5207 /* Spotify */,
 				268AE64A2BCEECE4004D5207 /* Shared */,
 				268AE63D2BCEEBDC004D5207 /* Assets.xcassets */,
 				268AE63F2BCEEBDC004D5207 /* Preview Content */,
@@ -94,6 +105,42 @@
 				268AE6532BCF00A3004D5207 /* User.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		268AE65D2BCFF816004D5207 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				268AE6642BCFFC3D004D5207 /* Models */,
+				268AE65E2BCFF834004D5207 /* Components */,
+				268AE65F2BCFF83C004D5207 /* Core */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		268AE65E2BCFF834004D5207 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				268AE6622BCFFA5D004D5207 /* SpotifyCategoryCell.swift */,
+				267B1FF12BD15EA400D7D3F8 /* SpotifyRecentCell.swift */,
+				267B1FF32BD1661C00D7D3F8 /* SpotifyNewReleaseCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		268AE65F2BCFF83C004D5207 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				268AE6602BCFF853004D5207 /* SpotifyHomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		268AE6642BCFFC3D004D5207 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				268AE6652BCFFC50004D5207 /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +224,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				268AE64C2BCEECF5004D5207 /* ImageLoaderView.swift in Sources */,
+				268AE6662BCFFC50004D5207 /* Category.swift in Sources */,
+				268AE6632BCFFA5D004D5207 /* SpotifyCategoryCell.swift in Sources */,
+				267B1FF42BD1661C00D7D3F8 /* SpotifyNewReleaseCell.swift in Sources */,
 				268AE63C2BCEEBD9004D5207 /* ContentView.swift in Sources */,
+				268AE6612BCFF853004D5207 /* SpotifyHomeView.swift in Sources */,
 				268AE63A2BCEEBD9004D5207 /* SpotifyCopyApp.swift in Sources */,
 				268AE64E2BCEEDAD004D5207 /* Constants.swift in Sources */,
 				268AE6502BCEF999004D5207 /* DataBaseHelper.swift in Sources */,
+				267B1FF22BD15EA400D7D3F8 /* SpotifyRecentCell.swift in Sources */,
 				268AE6522BCEFE69004D5207 /* Product.swift in Sources */,
 				268AE6542BCF00A3004D5207 /* User.swift in Sources */,
 			);
