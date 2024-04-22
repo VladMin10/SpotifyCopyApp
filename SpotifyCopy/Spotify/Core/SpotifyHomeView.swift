@@ -108,7 +108,7 @@ struct SpotifyHomeView: View {
                 SpotifyRecentCell(imageName: product.firstImage, title: product.title)
                 
                .asButton(.press) {
-                        <#code#>
+                        
                 }
             }
 
@@ -142,7 +142,7 @@ struct SpotifyHomeView: View {
                             ImageTitleRowCell(imageSize: 120, imageName: product.firstImage, title: product.title)
                         }
                         .asButton(.press) {
-                            <#code#>
+                            
                         }
                     }
                     .padding(.horizontal, 16)
